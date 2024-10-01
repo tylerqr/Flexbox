@@ -1,0 +1,29 @@
+body, html {
+    background-color: rgb(161, 161, 161);
+    font-family: monospace;
+    margin: 10px;
+}
+
+.item-container {
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    height: 500px;
+    
+
+    
+
+}
+
+.item {
+    background-color: rgb(114, 179, 235);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.active-button {
+    background-color: black;
+    color: white;
+}

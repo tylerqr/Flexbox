@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="item-container">
+        <div class="item">
+            <p>First</p>
+        </div>
+        <div class="item">
+            <p>Second is longer</p>
+        </div>
+        <div class="item">
+            <p>Third is much longer item</p>
+        </div>
+        <div class="item">
+            <p>Fourth is the longest item in the list</p>
+        </div>
+    </div>
+    <h1>Container settings</h1>
+    <h3>Flex direction</h3>
+    <div class="button-container">
+        <button class="button" id="container-row-button" onclick="containerRow(this)">Row</button>
+        <button class="button" id="container-column-button" onclick="containerColumn(this)">Column</button>
+        <button class="button" id="container-row-reverse-button" onclick="containerRowReverse(this)">Row-reverse</button>
+        <button class="button" id="container-column-reverse-button" onclick="containerColumnReverse(this)">Column-reverse</button>
+    </div><br>
+    <h3>Align items (cross-axis)</h3>
+    <div class="button-container">
+        <button class="button" id="container-flex-start-button" onclick="containerFlexStart(this)">Flex start</button>
+        <button class="button" id="container-flex-end-button" onclick="containerFlexEnd(this)">Flex end</button>
+        <button class="button" id="container-center-button" onclick="containerCenter(this)">Center</button>
+        <button class="button" id="container-stretch-button" onclick="containerStretch(this)">Stretch</button>
+    </div><br>
+    <h3>Justify Content (main axis)</h3>
+    <p>Controls spacing along the main axis (row or column)</p>
+    <div class="button-container">
+        <button class="button" id="container-justify-flex-start-button" onclick="containerJustifyFlexStart(this)">Flex start</button>
+        <button class="button" id="container-justify-flex-end-button" onclick="containerJustifyFlexEnd(this)">Flex end</button>
+        <button class="button" id="container-justify-center-button" onclick="containerJustifyCenter(this)">Center</button>
+        <button class="button" id="container-justify-space-between-button" onclick="containerJustifySpaceBetween(this)">Space between</button>
+        <button class="button" id="container-justify-space-around-button" onclick="containerJustifySpaceAround(this)">Space around</button>
+        <button class="button" id="container-justify-space-evenly-button" onclick="containerJustifySpaceEvenly(this)">Space evenly</button>
+    </div><br>
+    <h3>Align Content (cross-axis)</h3>
+    <p>Only applies when there are mutliple lines of flex items, when flex-wrap is set to wrap or wrap-reverse.</p>
+    <div class="button-container">
+        <button class="button" id="container-align-flex-start-button" onclick="containerAlignFlexStart(this)">Flex start</button>
+        <button class="button" id="container-align-flex-end-button" onclick="containerAlignFlexEnd(this)">Flex end</button>
+        <button class="button" id="container-align-center-button" onclick="containerAlignCenter(this)">Center</button>
+        <button class="button" id="container-align-stretch-button" onclick="containerAlignStretch(this)">Stretch</button>
+        <button class="button" id="container-align-space-between-button" onclick="containerAlignSpaceBetween(this)">Space between</button>
+        <button class="button" id="container-align-space-around-button" onclick="containerAlignSpaceAround(this)">Space around</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
